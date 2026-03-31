@@ -11,28 +11,45 @@
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
+  <a class="skip-link" href="#mainContent">Skip to main content</a>
   <div class="bg-shape bg-shape-left" aria-hidden="true"></div>
   <div class="bg-shape bg-shape-right" aria-hidden="true"></div>
 
-  <nav class="wrapper top-nav fade-up" aria-label="Main navigation">
-    <p class="site-label">chinesewithbaiba.eu</p>
-    <a class="back-link" href="articles.html">Back to Article Library</a>
+  <nav class="wrapper top-nav fade-up" aria-label="Primary navigation">
+    <a class="site-label site-home-link" href="index.html">chinesewithbaiba.eu</a>
+    <div class="nav-links">
+      <a class="nav-link" href="index.html">Home</a>
+      <a class="nav-link" href="articles.html" aria-current="page">Articles</a>
+      <a class="nav-link" href="index.html#apps">Apps</a>
+      <a class="nav-link" href="index.html#contact">Contact</a>
+    </div>
   </nav>
 
-  <main class="wrapper article-layout">
+  <main class="wrapper article-layout" id="mainContent">
     <article class="panel fade-up delay-1">
+      <p class="article-breadcrumb"><a class="back-link" href="articles.html">Back to Article Library</a></p>
       <h1 id="articleTitle">Loading article...</h1>
       <p id="articleMeta" class="article-meta"></p>
       <div id="articleTags" class="article-tags"></div>
       <div id="articleBody" class="article-body"></div>
       <p class="section-actions">
         <a class="outline-link" href="articles.html">View More Articles</a>
+        <a class="app-link secondary-action" href="index.html#contact">Contact Baiba</a>
       </p>
     </article>
   </main>
 
   <footer class="site-footer wrapper fade-up delay-4">
-    <small>&copy; <span id="year"></span> Chinese with Baiba. Hosted on GitHub Pages.</small>
+    <div class="footer-content">
+      <p class="footer-title">Chinese with Baiba</p>
+      <p class="footer-copy">Return to the article library or contact Baiba for private lesson information.</p>
+      <div class="footer-links" aria-label="Footer links">
+        <a href="index.html">Home</a>
+        <a href="articles.html">Articles</a>
+        <a href="mailto:Chinesewithbaiba@gmail.com">Email</a>
+      </div>
+      <small>&copy; <span id="year"></span> Chinese with Baiba. Hosted on GitHub Pages.</small>
+    </div>
   </footer>
 
   <script src="assets/js/main.js"></script>

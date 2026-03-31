@@ -11,25 +11,43 @@
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
+  <a class="skip-link" href="#mainContent">Skip to main content</a>
   <div class="bg-shape bg-shape-left" aria-hidden="true"></div>
   <div class="bg-shape bg-shape-right" aria-hidden="true"></div>
 
+  <nav class="wrapper top-nav fade-up" aria-label="Primary navigation">
+    <a class="site-label site-home-link" href="index.html">chinesewithbaiba.eu</a>
+    <div class="nav-links">
+      <a class="nav-link" href="index.html" aria-current="page">Home</a>
+      <a class="nav-link" href="articles.html">Articles</a>
+      <a class="nav-link" href="#apps">Apps</a>
+      <a class="nav-link" href="#contact">Contact</a>
+    </div>
+  </nav>
+
   <header class="site-header wrapper fade-up" id="top">
-    <p class="site-label">chinesewithbaiba.eu</p>
     <h1>Chinese with Baiba</h1>
     <p class="subtitle">
       Friendly Chinese learning support with tutor Baiba
       <span class="chinese-name" id="chineseName">(冰玉)</span>.
     </p>
+    <p class="hero-support">
+      Clear private Mandarin lessons, practical study guidance, and a growing library of articles
+      for beginners and HSK-focused learners.
+    </p>
+    <div class="hero-actions" aria-label="Primary actions">
+      <a class="app-link" href="articles.html">Browse Articles</a>
+      <a class="outline-link" href="#contact">Contact Baiba</a>
+    </div>
   </header>
 
-  <main class="wrapper content">
+  <main class="wrapper content" id="mainContent">
     <section class="panel fade-up delay-1">
       <h2>About Your Tutor</h2>
       <p>
         Baiba helps students build a practical foundation in Mandarin with clear explanations,
         real-life examples, and a calm learning rhythm. This website is the central place for
-        basic tutor information and student tools.
+        tutor information, study articles, and student tools.
       </p>
     </section>
 
@@ -54,7 +72,7 @@
       </div>
     </section>
 
-    <section class="panel fade-up delay-3">
+    <section class="panel fade-up delay-3" id="apps">
       <h2>Learning Apps</h2>
       <p>
         Student apps will be published as separate subdomains under
@@ -69,14 +87,14 @@
         </article>
 
         <article class="app-card muted">
-          <h3>Future Subdomain Apps</h3>
-          <p>Examples: vocab trainer, tone practice, and quick grammar drills.</p>
-          <span class="coming-soon">Coming soon on subdomains</span>
+          <h3>Future Apps</h3>
+          <p>Examples: quick grammar database.</p>
+          <span class="coming-soon">Coming soon ..</span>
         </article>
       </div>
     </section>
 
-    <section class="panel fade-up delay-3">
+    <section class="panel fade-up delay-4">
       <h2>Articles About Chinese</h2>
       <p>
         Read practical medium and long-form articles on pronunciation, character learning,
@@ -87,19 +105,28 @@
       </p>
     </section>
 
-    <section class="panel fade-up delay-3">
-      <h2>Contacts</h2>
+    <section class="panel fade-up delay-4" id="contact">
+      <h2>Contact</h2>
       <div class="contact-card">
         <p><strong>Tutor:</strong> Baiba (冰玉)</p>
-        <p><strong>Course type:</strong> Private Chinese language lessons</p>
+        <p><strong>Lesson format:</strong> Private Chinese language lessons</p>
         <p><strong>Contact:</strong> <a class="mail-link" href="mailto:Chinesewithbaiba@gmail.com">Chinesewithbaiba@gmail.com</a></p>
-        <p><strong>Social handle:</strong> Chinesewithbaiba</p>
+        <p><strong>Social handle:</strong> ChineseWithBaiba</p>
       </div>
     </section>
   </main>
 
   <footer class="site-footer wrapper fade-up delay-4">
-    <small>&copy; <span id="year"></span> Chinese with Baiba. Hosted on GitHub Pages.</small>
+    <div class="footer-content">
+      <p class="footer-title">Chinese with Baiba</p>
+      <p class="footer-copy">Private Mandarin lessons, practical study articles, and simple learning tools.</p>
+      <div class="footer-links" aria-label="Footer links">
+        <a href="index.html">Home</a>
+        <a href="articles.html">Articles</a>
+        <a href="mailto:Chinesewithbaiba@gmail.com">Email</a>
+      </div>
+      <small>&copy; <span id="year"></span> Chinese with Baiba.</small>
+    </div>
   </footer>
 
   <script src="assets/js/main.js"></script>
