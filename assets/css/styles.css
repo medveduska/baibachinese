@@ -221,13 +221,16 @@ a:focus-visible {
 }
 
 .app-link {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   text-decoration: none;
   color: #ffffff;
   background: var(--accent);
   border-radius: 10px;
   padding: 0.48rem 0.78rem;
   font-weight: 600;
+  line-height: 1.2;
 }
 
 .app-link:hover {
@@ -243,7 +246,9 @@ a:focus-visible {
 }
 
 .outline-link {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   text-decoration: none;
   color: var(--accent-dark);
   border: 1px solid rgba(194, 31, 48, 0.35);
@@ -251,6 +256,7 @@ a:focus-visible {
   padding: 0.45rem 0.75rem;
   font-weight: 700;
   background: #fff9f7;
+  line-height: 1.2;
 }
 
 .outline-link:hover {
@@ -359,9 +365,13 @@ a:focus-visible {
 .top-nav .back-link {
   color: #ffe9dd;
   text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   border: 1px solid transparent;
   border-radius: 999px;
   padding: 0.45rem 0.72rem;
+  line-height: 1.2;
 }
 
 .nav-link:hover,
