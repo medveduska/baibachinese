@@ -15,7 +15,9 @@ Simple static website for Chinese language students to learn basic information a
 
 ## App Links
 
-- Current app prototype: https://medveduska.github.io/myRustDemoProject/
+- Vocabulary Cards: https://wordcards.chinesewithbaiba.eu/
+- Chinese Grammar Studio: https://grammar.chinesewithbaiba.eu/
+- Pinyin Wheel (Little Pinyin · Spin & Say): https://pinyinwheel.chinesewithbaiba.eu/
 - Future tools can be published as subdomains of `chinesewithbaiba.eu`
 
 ## Article CMS (Manual, File-Based)
@@ -51,13 +53,21 @@ tags: HSK,Speaking,Practice
 
 3. Write the article body using regular HTML (`<h2>`, `<p>`, `<ul>`, etc.).
 4. Add an entry in `content/articles/index.json` with matching `slug`, `title`, `date`, `summary`, `tags`, and `file`.
-5. Commit and push. GitHub Pages will publish it automatically.
+5. Run `py scripts/build-seo.py` to regenerate the complete article pages, article library, metadata, and sitemap.
+6. Commit and push. The GitHub Pages workflow also runs the generator before publishing.
 
 ### Notes
 
 - Use date format `YYYY-MM-DD` for clean sorting.
 - Keep `slug` lowercase with hyphens.
 - The article library automatically sorts by newest date first.
+- Published articles live at `articles/<slug>.html` with their full content available without JavaScript. Existing `article.html?slug=...` links remain supported and point search engines to the static canonical page.
+
+## Google Search
+
+The site includes unique titles and descriptions, canonical URLs, Open Graph metadata, WebSite/Article structured data, a robots file, and a sitemap. Run `py scripts/build-seo.py` after changing article metadata or templates. Edit article source fragments, rather than generated pages.
+
+After deploying, verify the domain in Google Search Console and submit `https://chinesewithbaiba.eu/sitemap.xml`. Use URL Inspection to check the homepage and an article. Indexing, search rankings, and Core Web Vitals are not established by these code changes; review Search Console and PageSpeed Insights for live results.
 
 ## Local Run
 

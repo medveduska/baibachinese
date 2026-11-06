@@ -116,6 +116,11 @@ async function loadArticle() {
         : [];
 
     document.title = `${title} | Chinese with Baiba`;
+    const canonical = document.createElement("link");
+    canonical.rel = "canonical";
+    canonical.href = `https://chinesewithbaiba.eu/articles/${encodeURIComponent(slug)}.html`;
+    document.head.appendChild(canonical);
+    document.querySelector('meta[name="description"]').content = articleMeta.summary || title;
     titleEl.textContent = title;
     metaEl.textContent = date;
     tagsEl.innerHTML = tags.map((tag) => `<span class=\"article-tag\">${tag}</span>`).join("");
