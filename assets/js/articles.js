@@ -24,7 +24,7 @@ async function loadArticleIndex() {
 }
 
 function getReadLink(article) {
-  return `article.html?slug=${encodeURIComponent(article.slug)}`;
+  return `articles/${encodeURIComponent(article.slug)}.html`;
 }
 
 async function loadArticles() {
