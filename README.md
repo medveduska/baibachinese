@@ -18,6 +18,7 @@ Simple static website for Chinese language students to learn basic information a
 - Vocabulary Cards: https://wordcards.chinesewithbaiba.eu/
 - Chinese Grammar Studio: https://grammar.chinesewithbaiba.eu/
 - Pinyin Wheel (Little Pinyin · Spin & Say): https://pinyinwheel.chinesewithbaiba.eu/
+- Reading Studio: https://reading.chinesewithbaiba.eu/
 - Future tools can be published as subdomains of `chinesewithbaiba.eu`
 
 ## Article CMS (Manual, File-Based)
