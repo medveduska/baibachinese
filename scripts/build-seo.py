@@ -28,8 +28,8 @@ def metadata(page, url, title, description, kind="website", schema=None):
 
 home = ROOT / "index.html"
 home.write_text(metadata(home.read_text(encoding="utf-8"), BASE,
-    "Online Mandarin Lessons & Learning Apps | Chinese with Baiba",
-    "Learn Mandarin online with native Chinese speaker Baiba. Explore private lessons, HSK study articles, vocabulary cards, Grammar Studio and Pinyin Wheel.",
+    "Chinese Tutor in Latvia & Free Apps | Chinese with Baiba",
+    "Learn with Baiba, a native Chinese tutor in Riga, Latvia. Book lessons in person or online across the EU, and explore four free Chinese learning apps.",
     schema={"@context": "https://schema.org", "@type": "WebSite", "name": "Chinese with Baiba", "url": BASE,
             "publisher": {"@type": "Person", "name": "Baiba", "alternateName": "冰玉", "url": BASE}}), encoding="utf-8")
 
